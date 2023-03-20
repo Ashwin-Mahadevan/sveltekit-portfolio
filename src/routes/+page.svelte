@@ -1,6 +1,6 @@
 <h1>Ashwin Mahadevan</h1>
 
-<span>This site is under construction.</span>
+<p>This site is under construction.</p>
 
 <ul>
 	<li>Email: ashwinm@berkeley.edu</li>
