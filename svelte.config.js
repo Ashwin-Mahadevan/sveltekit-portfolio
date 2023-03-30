@@ -3,9 +3,7 @@ import { vitePreprocess } from "@sveltejs/kit/vite";
 
 const config = {
   preprocess: vitePreprocess(),
-  kit: {
-    adapter: adapter({ runtime: "edge" })
-  }
+  kit: { adapter: adapter({ runtime: "edge" }) }
 };
 
 export default config;
