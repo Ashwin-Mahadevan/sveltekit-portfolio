@@ -10,4 +10,6 @@
   <title>Ashwin Mahadevan</title>
 </svelte:head>
 
-<slot />
+<div class="container mx-auto">
+  <slot />
+</div>
