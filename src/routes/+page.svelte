@@ -12,9 +12,7 @@
     {#each links as { name, content, href }, index}
       <!-- TODO: Link styling. -->
       <li>{name}: <a {href} class="text-blue-800"> {content} </a></li>
-      {#if index < links.length - 1}
-        <span class="mx-2">|</span>
-      {/if}
+      {#if index < links.length - 1} <span class="mx-2"> | </span> {/if}
     {/each}
   </ul>
 
