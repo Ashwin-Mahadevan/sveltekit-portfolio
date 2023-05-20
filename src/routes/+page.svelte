@@ -5,11 +5,12 @@
   ];
 </script>
 
-<div class="my-12 space-y-4">
+<div class="my-8">
   <h1 class="text-5xl font-bold text-center">Ashwin Mahadevan</h1>
 
   <ul class="flex justify-center">
     {#each links as { name, content, href }, index}
+      <!-- TODO: Link styling. -->
       <li>{name}: <a {href} class="text-blue-800"> {content} </a></li>
       {#if index < links.length - 1}
         <span class="mx-2">|</span>
@@ -17,7 +18,9 @@
     {/each}
   </ul>
 
-  <p>Hi, I'm Ashwin. I'm a mathematician and entrepreneur.</p>
+  <hr class="m-2" />
 
-  <p>This website is under construction.</p>
+  <p class="text-center">Hi, I'm Ashwin. I'm a mathematician and entrepreneur.</p>
+
+  <p>This page is under construction.</p>
 </div>
