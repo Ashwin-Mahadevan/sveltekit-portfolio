@@ -1,8 +1,7 @@
 .DS_Store
 node_modules
-/build
-/.svelte-kit
-/package
+.svelte-kit
+.vercel
 .env
 .env.*
 vite.config.js.timestamp-*
