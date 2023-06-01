@@ -11,7 +11,7 @@
   <ul class="flex justify-center">
     {#each links as { name, content, href }, index}
       <!-- TODO: Link styling. -->
-      <li>{name}: <a {href} class="text-blue-800"> {content} </a></li>
+      <li>{name}: <a {href} class="text-blue-700 underline"> {content} </a></li>
       {#if index < links.length - 1} <span class="mx-2"> | </span> {/if}
     {/each}
   </ul>
@@ -19,6 +19,9 @@
   <hr class="m-2" />
 
   <p class="text-center">Hi, I'm Ashwin. I'm a mathematician and entrepreneur.</p>
-
-  <p>This page is under construction.</p>
+  <p class="text-center">
+    <a href="https://www.spinster.ai/ashwinm" class="text-blue-700 underline">
+      I've Turned Into an Artificial Intelligence.
+    </a>
+  </p>
 </div>
