@@ -21,8 +21,8 @@
 	<p class="text-center">Hi, I'm Ashwin. I'm a mathematician and entrepreneur.</p>
 
 	<p class="text-center">
-		<a href="https://www.spinster.ai/ashwinm" class="text-blue-700 underline">
-			I've turned into an Artificial Intelligence.
+		<a href="/chat" class="text-blue-700 underline">
+			I've turned into an Artificial Intelligence!
 		</a>
 	</p>
 </div>
