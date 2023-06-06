@@ -18,5 +18,7 @@
 </div>
 
 <footer class="text-center">
-	This page has been viewed {data.views} times!
+	{#await data.stream.views then views}
+		This page has been viewed {views} times!
+	{/await}
 </footer>

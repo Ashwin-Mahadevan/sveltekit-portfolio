@@ -1,3 +1,11 @@
 import kv from "@vercel/kv";
 
-export const load = () => ({ views: kv.incr("views") });
+const { format } = Intl.NumberFormat("en", { notation: "compact" });
+
+export const load = () => {
+	const views = kv.incr("views").then(format);
+
+	return {
+		stream: { views }
+	};
+};
