@@ -1,6 +1,6 @@
 <script lang="ts">
 	const links = [
-		{ name: "Website", content: "ashwinm.com", href: "https://ashwinm.com" },
+		{ name: "Website", content: "ashwinm.com", href: "/" },
 		{ name: "Email", content: "ashwinm@berkeley.edu", href: "mailto:ashwinm@berkeley.edu" }
 	];
 </script>
