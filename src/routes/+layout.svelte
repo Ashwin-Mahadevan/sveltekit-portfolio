@@ -4,6 +4,8 @@
 	import { inject } from "@vercel/analytics";
 
 	inject({ mode: dev ? "development" : "production" });
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -14,3 +16,7 @@
 <div class="container mx-auto">
 	<slot />
 </div>
+
+<footer class="text-center">
+	This page has been viewed {data.views} times!
+</footer>
