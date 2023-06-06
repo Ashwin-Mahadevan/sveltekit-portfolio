@@ -4,7 +4,7 @@ import { vitePreprocess } from "@sveltejs/kit/vite";
 
 const config = {
 	preprocess: [vitePreprocess(), sveltePreprocess({ postcss: true })],
-	kit: { adapter: adapter({ runtime: "edge" }) }
+	kit: { adapter: adapter({ runtime: "edge", regions: ["iad1"] }) }
 };
 
 export default config;
