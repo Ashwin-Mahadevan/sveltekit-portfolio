@@ -23,7 +23,8 @@
 
 <ResumeItem
 	title=""
-	organization="Johns Hopkins University Applied Physics Laboratory"
+	organization="Johns Hopkins University Applied Physics Laboratory
+	Signals and Systems Analysis Group"
 	startTime=""
 	endTime=""
 	bullets={[]}
