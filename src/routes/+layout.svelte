@@ -13,7 +13,7 @@
 	<link rel="icon" href="/images/profile.png" />
 </svelte:head>
 
-<div class="container mx-auto">
+<div class="container mx-auto my-8">
 	<slot />
 </div>
 
