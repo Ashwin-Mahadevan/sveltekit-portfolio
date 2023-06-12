@@ -22,12 +22,12 @@
 <p class="text-center">Hi, I'm Ashwin. I'm a mathematician and entrepreneur.</p>
 
 <ResumeItem
-	title=""
+	title="Target Motion Analsysis Developer Intern"
 	organization="Johns Hopkins University Applied Physics Laboratory
 	Signals and Systems Analysis Group"
 	startTime=""
 	endTime=""
-	bullets={[]}
+	bullets={[""]}
 />
 
 <p class="text-center">
