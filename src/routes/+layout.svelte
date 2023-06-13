@@ -1,9 +1,15 @@
 <script lang="ts">
 	import "../app.css";
-	import { dev } from "$app/environment";
-	import { inject } from "@vercel/analytics";
+	import { page } from "$app/stores";
+	import { browser } from "$app/environment";
+	import posthog from "posthog-js";
 
-	inject({ mode: dev ? "development" : "production" });
+	if (browser)
+		posthog.init("phc_xCB1CV42QbL2GtwyP30htHxMriPr5ZfCkZLcAIjxsfa", {
+			api_host: "https://app.posthog.com"
+		});
+
+	$: $page.url.pathname, browser && posthog.capture("$pageview");
 
 	export let data;
 </script>
