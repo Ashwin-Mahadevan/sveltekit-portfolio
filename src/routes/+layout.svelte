@@ -3,12 +3,9 @@
 	import { page } from "$app/stores";
 	import { browser } from "$app/environment";
 	import posthog from "posthog-js";
+	import { PUBLIC_POSTHOG_API_KEY } from "$env/static/public";
 
-	if (browser)
-		posthog.init("phc_xCB1CV42QbL2GtwyP30htHxMriPr5ZfCkZLcAIjxsfa", {
-			api_host: "https://app.posthog.com"
-		});
-
+	if (browser) posthog.init(PUBLIC_POSTHOG_API_KEY, { api_host: "https://app.posthog.com" });
 	$: $page.url.pathname, browser && posthog.capture("$pageview");
 
 	export let data;
