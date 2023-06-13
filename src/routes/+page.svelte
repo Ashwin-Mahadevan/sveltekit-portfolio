@@ -31,5 +31,7 @@
 />
 
 <p class="text-center">
-	<a href="/chat" class="text-blue-700 underline"> I've turned into an Artificial Intelligence! </a>
+	<a href="https://spinster.ai/ashwin" class="text-blue-700 underline">
+		I've turned into an Artificial Intelligence!
+	</a>
 </p>
