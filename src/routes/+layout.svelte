@@ -6,12 +6,11 @@
 	import { PUBLIC_POSTHOG_API_KEY } from "$env/static/public";
 	import MenuLogo from "./MenuLogo.svelte";
 
-	if (browser) posthog.init(PUBLIC_POSTHOG_API_KEY, { api_host: "https://app.posthog.com" });
+	const posthogConfig = { api_host: "https://app.posthog.com" };
+	if (browser) posthog.init(PUBLIC_POSTHOG_API_KEY, posthogConfig);
 	$: $page.url.pathname, browser && posthog.capture("$pageview");
 
-	let showMenu = true;
-
-	$: console.log($page.url.pathname);
+	let showMenu = false;
 
 	const menuLinks = [
 		{ text: "About", href: "/about" },
