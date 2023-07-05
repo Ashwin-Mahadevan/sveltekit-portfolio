@@ -2,10 +2,13 @@
 	import "../app.css";
 	import { page } from "$app/stores";
 	import { browser } from "$app/environment";
-	import posthog from "posthog-js";
 	import { PUBLIC_POSTHOG_API_KEY } from "$env/static/public";
+	import GithubIcon from "$lib/components/GithubIcon.svelte";
+	import posthog from "posthog-js";
 	import MenuLogo from "./MenuLogo.svelte";
 	import MenuLink from "./MenuLink.svelte";
+	import TwitterIcon from "$lib/components/TwitterIcon.svelte";
+	import InstagramIcon from "$lib/components/InstagramIcon.svelte";
 
 	const posthogConfig = { api_host: "https://app.posthog.com" };
 	if (browser) posthog.init(PUBLIC_POSTHOG_API_KEY, posthogConfig);
@@ -55,8 +58,18 @@
 			{/each}
 		</div>
 
-		<div class="hidden lg:flex lg:flex-1 justify-end">
-			<!-- TODO: Social Links -->
+		<div class="hidden lg:flex lg:flex-1 justify-end space-x-4 text-gray-900">
+			<a class="hover:text-indigo-700" href="https://twitter.com/shwin_m">
+				<TwitterIcon />
+			</a>
+
+			<a class="hover:text-indigo-700" href="https://github.com/Ashwin-Mahadevan">
+				<GithubIcon />
+			</a>
+
+			<a class="hover:text-indigo-700" href="https://www.instagram.com/ashwin_mahadevan">
+				<InstagramIcon />
+			</a>
 		</div>
 	</nav>
 
