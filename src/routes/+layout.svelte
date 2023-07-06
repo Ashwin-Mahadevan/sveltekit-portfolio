@@ -25,7 +25,7 @@
 
 <svelte:head>
 	<title>Ashwin Mahadevan</title>
-	<link rel="icon" href="/images/profile.png" />
+	<link rel="icon" href="/images/profile.webp" />
 </svelte:head>
 
 <header class="bg-white">

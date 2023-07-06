@@ -33,6 +33,6 @@
 	</div>
 
 	<div class="mt-20 mx-auto md:max-w-2xl lg:mx-0 lg:mt-0">
-		<img src="/images/splash.png" class="shadow-lg rounded-xl" alt="Ashwin Mahadevan" />
+		<img src="/images/splash.webp" class="shadow-lg rounded-xl" alt="Ashwin Mahadevan" />
 	</div>
 </div>
