@@ -4,11 +4,11 @@
 	import { browser } from "$app/environment";
 	import { PUBLIC_POSTHOG_API_KEY } from "$env/static/public";
 	import GithubIcon from "$lib/components/GithubIcon.svelte";
+	import TwitterIcon from "$lib/components/TwitterIcon.svelte";
+	import InstagramIcon from "$lib/components/InstagramIcon.svelte";
 	import posthog from "posthog-js";
 	import MenuLogo from "./MenuLogo.svelte";
 	import MenuLink from "./MenuLink.svelte";
-	import TwitterIcon from "$lib/components/TwitterIcon.svelte";
-	import InstagramIcon from "$lib/components/InstagramIcon.svelte";
 
 	const posthogConfig = { api_host: "https://app.posthog.com" };
 	if (browser) posthog.init(PUBLIC_POSTHOG_API_KEY, posthogConfig);
@@ -52,7 +52,7 @@
 			</svg>
 		</button>
 
-		<div class="hidden lg:flex space-x-12">
+		<div class="hidden lg:flex space-x-12 items-center">
 			{#each menuLinks as { text, href }}
 				<MenuLink {text} {href} active={$page.url.pathname === href} />
 			{/each}
@@ -78,9 +78,7 @@
 		<!-- Background backdrop, show/hide based on slide-over state. -->
 		<div class="fixed inset-0 z-10" />
 
-		<div
-			class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-		>
+		<div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center space-x-4">
 					<MenuLogo />
@@ -110,6 +108,6 @@
 	</div>
 </header>
 
-<div>
+<div class="mt-16">
 	<slot />
 </div>
