@@ -63,12 +63,12 @@
 				<TwitterIcon />
 			</a>
 
-			<a class="hover:text-indigo-700" href="https://github.com/Ashwin-Mahadevan">
-				<GithubIcon />
-			</a>
-
 			<a class="hover:text-indigo-700" href="https://www.instagram.com/ashwin_mahadevan">
 				<InstagramIcon />
+			</a>
+
+			<a class="hover:text-indigo-700" href="https://github.com/Ashwin-Mahadevan">
+				<GithubIcon />
 			</a>
 		</div>
 	</nav>
