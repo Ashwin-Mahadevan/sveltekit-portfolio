@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  posthog-js:
-    specifier: ^1.75.2
-    version: 1.75.2
+  '@vercel/analytics':
+    specifier: ^1.0.1
+    version: 1.0.1
 
 devDependencies:
   '@sveltejs/adapter-vercel':
@@ -31,6 +31,9 @@ devDependencies:
   prettier:
     specifier: ^3.0.0
     version: 3.0.0
+  prettier-plugin-organize-imports:
+    specifier: ^3.2.3
+    version: 3.2.3(prettier@3.0.0)(typescript@5.1.6)
   prettier-plugin-svelte:
     specifier: ^3.0.3
     version: 3.0.3(prettier@3.0.0)(svelte@4.1.2)
@@ -447,6 +450,10 @@ packages:
     resolution: {integrity: sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==}
     dev: true
 
+  /@vercel/analytics@1.0.1:
+    resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
+    dev: false
+
   /@vercel/nft@0.23.0:
     resolution: {integrity: sha512-1iuPjyltiPqyZrvc/bW1CyICRdng8bVhpJT8MsIXV7Wj+mRFyJs9krsHbVy2pZwu7BMAgforQsT5TCY1JoBDxw==}
     engines: {node: '>=14'}
@@ -809,10 +816,6 @@ packages:
     dependencies:
       reusify: 1.0.4
     dev: true
-
-  /fflate@0.4.8:
-    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
-    dev: false
 
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
@@ -1315,11 +1318,22 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /posthog-js@1.75.2:
-    resolution: {integrity: sha512-tvLsKu9FXrsz1ytkjRc0xqo1eZJ/FZjTdrrKRrXrzgbpwnqeN5pgs6Mq4hMNxQeFuDhoCMwGnyChk1NnDL5hEw==}
+  /prettier-plugin-organize-imports@3.2.3(prettier@3.0.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-KFvk8C/zGyvUaE3RvxN2MhCLwzV6OBbFSkwZ2OamCrs9ZY4i5L77jQ/w4UmUr+lqX8qbaqVq6bZZkApn+IgJSg==}
+    peerDependencies:
+      '@volar/vue-language-plugin-pug': ^1.0.4
+      '@volar/vue-typescript': ^1.0.4
+      prettier: '>=2.0'
+      typescript: '>=2.9'
+    peerDependenciesMeta:
+      '@volar/vue-language-plugin-pug':
+        optional: true
+      '@volar/vue-typescript':
+        optional: true
     dependencies:
-      fflate: 0.4.8
-    dev: false
+      prettier: 3.0.0
+      typescript: 5.1.6
+    dev: true
 
   /prettier-plugin-svelte@3.0.3(prettier@3.0.0)(svelte@4.1.2):
     resolution: {integrity: sha512-dLhieh4obJEK1hnZ6koxF+tMUrZbV5YGvRpf2+OADyanjya5j0z1Llo8iGwiHmFWZVG/hLEw/AJD5chXd9r3XA==}

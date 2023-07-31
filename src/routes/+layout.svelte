@@ -19,7 +19,7 @@
 	const menuLinks = [
 		{ text: "About", href: "/about" },
 		{ text: "Blog", href: "/blog" },
-		{ text: "Contact", href: "/contact" }
+		{ text: "Contact", href: "/contact" },
 	];
 </script>
 
@@ -32,10 +32,18 @@
 	<nav class="mx-auto max-w-7xl flex items-center justify-between p-6">
 		<div class="flex lg:flex-1 items-center space-x-4">
 			<MenuLogo />
-			<MenuLink text="Ashwin Mahadevan" href="/" active={$page.url.pathname === "/"} />
+			<MenuLink
+				text="Ashwin Mahadevan"
+				href="/"
+				active={$page.url.pathname === "/"}
+			/>
 		</div>
 
-		<button on:click={() => (showMenu = true)} class:hidden={showMenu} class="lg:hidden p-2">
+		<button
+			on:click={() => (showMenu = true)}
+			class:hidden={showMenu}
+			class="lg:hidden p-2"
+		>
 			<svg
 				class="h-8 w-8 text-gray-700"
 				fill="none"
@@ -63,26 +71,43 @@
 				<TwitterIcon />
 			</a>
 
-			<a class="hover:text-indigo-700" href="https://www.instagram.com/ashwin_mahadevan">
+			<a
+				class="hover:text-indigo-700"
+				href="https://www.instagram.com/ashwin_mahadevan"
+			>
 				<InstagramIcon />
 			</a>
 
-			<a class="hover:text-indigo-700" href="https://github.com/Ashwin-Mahadevan">
+			<a
+				class="hover:text-indigo-700"
+				href="https://github.com/Ashwin-Mahadevan"
+			>
 				<GithubIcon />
 			</a>
 		</div>
 	</nav>
 
 	<!-- Mobile menu, show/hide based on menu open state. -->
-	<div class:hidden={!showMenu} class="lg:hidden" role="dialog" aria-modal="true">
+	<div
+		class:hidden={!showMenu}
+		class="lg:hidden"
+		role="dialog"
+		aria-modal="true"
+	>
 		<!-- Background backdrop, show/hide based on slide-over state. -->
 		<div class="fixed inset-0 z-10" />
 
-		<div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm">
+		<div
+			class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm"
+		>
 			<div class="flex items-center justify-between">
 				<div class="flex items-center space-x-4">
 					<MenuLogo />
-					<MenuLink text="Ashwin Mahadevan" href="/" active={$page.url.pathname === "/"} />
+					<MenuLink
+						text="Ashwin Mahadevan"
+						href="/"
+						active={$page.url.pathname === "/"}
+					/>
 				</div>
 
 				<button on:click={() => (showMenu = false)} class="p-2">
@@ -94,7 +119,11 @@
 						stroke="currentColor"
 						aria-hidden="true"
 					>
-						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M6 18L18 6M6 6l12 12"
+						/>
 					</svg>
 				</button>
 			</div>

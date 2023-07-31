@@ -6,5 +6,5 @@ export default defineConfig({
 		minify: "esbuild",
 		cssMinify: "esbuild",
 	},
-	plugins: [sveltekit()]
+	plugins: [sveltekit()],
 });

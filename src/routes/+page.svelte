@@ -1,14 +1,20 @@
-<div class="mx-auto max-w-7xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-0">
+<div
+	class="mx-auto max-w-7xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-0"
+>
 	<div class="px-6 lg:px-0 lg:pt-4 mx-auto max-w-2lg space-y-6 my-auto">
-		<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Nice to meet you!</h1>
+		<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+			Nice to meet you!
+		</h1>
 
 		<p class="text-lg leading-8 text-gray-600">
-			I'm a mathematicican and software engineer currently based in the San Francisco Bay Area.
-			Welcome to my website!
+			I'm a mathematicican and software engineer currently based in the San
+			Francisco Bay Area. Welcome to my website!
 		</p>
 
 		<a href="https://spinster.ai/@mahadevan" class="flex space-x-6">
-			<div class="rounded-full px-4 py-1 bg-indigo-600/10 border border-indigo-600/10">
+			<div
+				class="rounded-full px-4 py-1 bg-indigo-600/10 border border-indigo-600/10"
+			>
 				<span class="text-sm font-semibold text-indigo-600">
 					I've turned into an artificial intelligence!
 				</span>
@@ -33,6 +39,10 @@
 	</div>
 
 	<div class="mt-20 mx-auto md:max-w-2xl lg:mx-0 lg:mt-0">
-		<img src="/images/splash.webp" class="shadow-lg rounded-xl" alt="Ashwin Mahadevan" />
+		<img
+			src="/images/splash.webp"
+			class="shadow-lg rounded-xl"
+			alt="Ashwin Mahadevan"
+		/>
 	</div>
 </div>

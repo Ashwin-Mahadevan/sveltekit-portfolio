@@ -1,11 +1,14 @@
 <div class="mx-auto max-w-7xl px-6 lg:px-8">
 	<div class="mx-auto max-w-2xl lg:max-w-4xl space-y-20">
 		<div class="space-y-2">
-			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My Writing</h2>
+			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+				My Writing
+			</h2>
 			<p class="text-lg leading-8 text-gray-600">
-				I've been collecting my thoughts in writing over the past two years. Initially, I decided
-				against releasing them publicly, but I've since changed my mind. I'll be posting here every
-				once in a while, so stay tuned!
+				I've been collecting my thoughts in writing over the past two years.
+				Initially, I decided against releasing them publicly, but I've since
+				changed my mind. I'll be posting here every once in a while, so stay
+				tuned!
 			</p>
 		</div>
 
@@ -19,7 +22,8 @@
 
 				<div>
 					<div class="flex items-center gap-x-4 text-xs">
-						<time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+						<time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time
+						>
 					</div>
 					<div class="group relative max-w-xl">
 						<h3
@@ -31,9 +35,10 @@
 							</a>
 						</h3>
 						<p class="mt-5 text-sm leading-6 text-gray-600">
-							Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non
-							aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla
-							deserunt vel iusto corrupti dicta laboris incididunt.
+							Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam
+							vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+							exercitationem placeat consectetur nulla deserunt vel iusto
+							corrupti dicta laboris incididunt.
 						</p>
 					</div>
 					<div class="mt-6 flex border-t border-gray-900/5 pt-6">
