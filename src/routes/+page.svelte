@@ -11,17 +11,18 @@
 			Francisco Bay Area. Welcome to my website!
 		</p>
 
-		<a href="https://spinster.ai/@mahadevan" class="flex space-x-6">
-			<div
-				class="rounded-full px-4 py-1 bg-indigo-600/10 border border-indigo-600/10"
+		<div class="flex space-x-4">
+			<a
+				class="rounded-full px-4 py-1 bg-indigo-100 border border-indigo-200"
+				href="https://spinster.ai/@ashwinm"
 			>
 				<span class="text-sm font-semibold text-indigo-600">
 					I've turned into an artificial intelligence!
 				</span>
-			</div>
+			</a>
 
-			<div class="inline-flex items-center space-x-1">
-				<span class=" text-sm font-medium text-gray-600">Check it out</span>
+			<a class="flex items-center" href="https://spinster.ai/@ashwinm">
+				<span class="text-sm font-medium text-gray-600">Check it out</span>
 				<svg
 					class="h-5 w-5 text-gray-400"
 					viewBox="0 0 20 20"
@@ -34,8 +35,8 @@
 						d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
 					/>
 				</svg>
-			</div>
-		</a>
+			</a>
+		</div>
 	</div>
 
 	<div class="mt-20 mx-auto md:max-w-2xl lg:mx-0 lg:mt-0">
