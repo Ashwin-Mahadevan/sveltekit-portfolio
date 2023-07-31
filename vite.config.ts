@@ -3,7 +3,8 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
 	build: {
-		minify: true
+		minify: "esbuild",
+		cssMinify: "esbuild",
 	},
 	plugins: [sveltekit()]
 });
