@@ -1,18 +1,15 @@
 <script lang="ts">
 	import "../app.css";
+	import { dev } from "$app/environment";
 	import { page } from "$app/stores";
-	import { browser } from "$app/environment";
-	import { PUBLIC_POSTHOG_API_KEY } from "$env/static/public";
 	import GithubIcon from "$lib/components/GithubIcon.svelte";
 	import TwitterIcon from "$lib/components/TwitterIcon.svelte";
 	import InstagramIcon from "$lib/components/InstagramIcon.svelte";
-	import posthog from "posthog-js";
+	import { inject } from "@vercel/analytics";
 	import MenuLogo from "./MenuLogo.svelte";
 	import MenuLink from "./MenuLink.svelte";
 
-	const posthogConfig = { api_host: "https://app.posthog.com" };
-	if (browser) posthog.init(PUBLIC_POSTHOG_API_KEY, posthogConfig);
-	$: $page.url.pathname, browser && posthog.capture("$pageview");
+	inject({ mode: dev ? "development" : "production" });
 
 	let showMenu = false;
 
